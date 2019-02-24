@@ -1,0 +1,40 @@
+/* 
+  InfoPlist.strings
+  NewPipe
+
+  Created by Somiya on 2018/12/9.
+  Copyright © 2018 Somiya. All rights reserved.
+*/
+CFBundleDisplayName = "NewPipe";
+// tab
+"Recommended" = "Recommended";
+"Trending" = "Trending";
+"Collection" = "Collection";
+"Searching" = "Searching";
+
+
+"AboutUS" = "About Us";
+"Like" = "Like";
+"Praise" = "Like";
+"Privacy" = "Privacy Policy";
+
+"Cancel" = "Cancel";
+"Confirm" = "Confirm";
+"Warring" = "Warring";
+"Title" = "Set play list name";
+"NotNull" = "Play list can't be empty";
+
+"Loading" = "Loading...";
+"KeyWords" = "Key Words";
+"PlayList" = "Play List";
+
+//
+"ListOver" = "The list was over";
+"Collected" = "Collected";
+"HasCollected" = "This video has been collection";
+"VideoUnavailable" = "Video is unavailable";
+
+"views" = "views";
+
+"NilVideos" = "play list is empty";
+"ListNameNOtNil" = "Please select play list name!";
