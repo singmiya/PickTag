@@ -18,3 +18,7 @@
 	[self.pickTagView showPickTagViewInView:self.view];
 	```
 
+## Demo
+<iframe height=500 width=500 src="https://github.com/singmiya/PickTag/blob/master/PickTag/screenshot.gif">
+
+
