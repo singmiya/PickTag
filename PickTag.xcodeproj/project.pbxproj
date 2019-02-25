@@ -11,8 +11,8 @@
 		E7488A1F2222B49100147B8C /* PickTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7488A192222B49100147B8C /* PickTagView.m */; };
 		E7488A202222B49100147B8C /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E7488A1A2222B49100147B8C /* UICollectionViewLeftAlignedLayout.m */; };
 		E7488A212222B49100147B8C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7488A1B2222B49100147B8C /* CollectionViewCell.m */; };
-		E7488A242222B50A00147B8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7488A222222B50A00147B8C /* Localizable.strings */; };
 		E7488A272222BBD700147B8C /* screenshot.gif in Resources */ = {isa = PBXBuildFile; fileRef = E7488A262222BBD700147B8C /* screenshot.gif */; };
+		E7488A2A2222E78E00147B8C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7488A282222E78E00147B8C /* Localizable.strings */; };
 		E7DB87382221BA0800009D73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DB87372221BA0800009D73 /* AppDelegate.m */; };
 		E7DB873B2221BA0800009D73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DB873A2221BA0800009D73 /* ViewController.m */; };
 		E7DB873E2221BA0800009D73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DB873C2221BA0800009D73 /* Main.storyboard */; };
@@ -49,9 +49,9 @@
 		E7488A1B2222B49100147B8C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		E7488A1C2222B49100147B8C /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
 		E7488A1D2222B49100147B8C /* PickTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickTagView.h; sourceTree = "<group>"; };
-		E7488A232222B50A00147B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../NewPipe/NewPipe/resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E7488A252222B51600147B8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "../../NewPipe/NewPipe/resources/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E7488A262222BBD700147B8C /* screenshot.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = screenshot.gif; sourceTree = "<group>"; };
+		E7488A292222E78E00147B8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E7488A2B2222E79500147B8C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E7DB87332221BA0800009D73 /* PickTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DB87362221BA0800009D73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7DB87372221BA0800009D73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,10 +140,10 @@
 				E7DB87392221BA0800009D73 /* ViewController.h */,
 				E7DB873A2221BA0800009D73 /* ViewController.m */,
 				E7DB87752221CD1A00009D73 /* ColorUtil.h */,
+				E7488A282222E78E00147B8C /* Localizable.strings */,
 				E7DB873C2221BA0800009D73 /* Main.storyboard */,
 				E7488A262222BBD700147B8C /* screenshot.gif */,
 				E7DB873F2221BA0A00009D73 /* Assets.xcassets */,
-				E7488A222222B50A00147B8C /* Localizable.strings */,
 				E7DB87412221BA0A00009D73 /* LaunchScreen.storyboard */,
 				E7DB87442221BA0A00009D73 /* Info.plist */,
 				E7DB87452221BA0A00009D73 /* main.m */,
@@ -273,8 +273,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7488A2A2222E78E00147B8C /* Localizable.strings in Resources */,
 				E7DB87432221BA0A00009D73 /* LaunchScreen.storyboard in Resources */,
-				E7488A242222B50A00147B8C /* Localizable.strings in Resources */,
 				E7DB87402221BA0A00009D73 /* Assets.xcassets in Resources */,
 				E7DB873E2221BA0800009D73 /* Main.storyboard in Resources */,
 				E7488A272222BBD700147B8C /* screenshot.gif in Resources */,
@@ -344,11 +344,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E7488A222222B50A00147B8C /* Localizable.strings */ = {
+		E7488A282222E78E00147B8C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E7488A232222B50A00147B8C /* en */,
-				E7488A252222B51600147B8C /* zh-Hans */,
+				E7488A292222E78E00147B8C /* en */,
+				E7488A2B2222E79500147B8C /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,22 @@
+/* 
+  InfoPlist.strings
+  NewPipe
+
+  Created by Somiya on 2018/12/9.
+  Copyright © 2018 Somiya. All rights reserved.
+*/
+CFBundleDisplayName = "PickTag";
+"Cancel" = "Cancel";
+"Confirm" = "Confirm";
+"Warring" = "Warring";
+"Title" = "Set play list name";
+"NotNull" = "Play list can't be empty";
+"AddNewTag" = "Add new play list name";
+"Add" = "Add";
+
+"Loading" = "Loading...";
+"KeyWords" = "Key Words";
+"PlayList" = "Play List";
+
+"NilVideos" = "play list is empty";
+"ListNameNOtNil" = "Please select play list name!";
