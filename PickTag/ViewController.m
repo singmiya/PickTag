@@ -40,7 +40,7 @@
 #import "ViewController.h"
 #import "PickTagView.h"
 
-@interface ViewController ()
+@interface ViewController ()<PickTagDelegate>
 @property (nonatomic, strong) PickTagView *pickTagView;
 @property (nonatomic, copy) NSArray *dataSource;
 
@@ -55,16 +55,19 @@
     [self initPickTagView];
 }
 - (void)initPickTagView {
-    self.pickTagView = [[PickTagView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 150) dataSource:self.dataSource delegate:self];
-
-    [self.pickTagView setConfirmAction:^(NSString *title) {
-        NSLog(@"confirm butn clicked!!! %@", title);
-    }];
+    self.pickTagView = [[PickTagView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 150) dataSource:self.dataSource];
+    self.pickTagView.ptDelegate = self;
 }
 - (IBAction)show:(id)sender {
     [self.pickTagView showPickTagViewInView:self.view];
 }
-
+#pragma mark - PickTagDelegate
+- (void)confirmDidClick:(NSString *)tag {
+    NSLog(@"confirm butn clicked!!! %@", tag);
+}
+- (void)addTagDidClick:(UIAlertController *)alertVC {
+    [self presentViewController:alertVC animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

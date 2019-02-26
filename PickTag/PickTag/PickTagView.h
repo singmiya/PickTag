@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void(^ConfirmAction)(NSString *);
+@protocol PickTagDelegate <NSObject>
+- (void)confirmDidClick:(NSString *)tag;
+- (void)addTagDidClick:(UIAlertController *)alertVC;
+@end
 
 @interface PickTagView : UIView
-@property (nonatomic, assign) ConfirmAction confirmAction;
+@property (nonatomic, assign) id<PickTagDelegate> ptDelegate;
 
-- (instancetype)initWithFrame:(CGRect)frame dataSource:(NSArray *)dataSource delegate:(id)delegate;
+- (instancetype)initWithFrame:(CGRect)frame dataSource:(NSArray *)dataSource;
 
 /**
  * 展示
